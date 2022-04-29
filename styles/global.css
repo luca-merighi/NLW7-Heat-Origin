@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --black-1: #121214;
+    --black-2: #202024;
+    --black-3: #323238;
+
+    --white: #E1E1E6;
+
+    --blue: #54a0ff;
+    --orange: #FAA42F;
+}
+
+body {
+    background: url('../img/mobile.svg') no-repeat center/cover;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    height: 100vh;
+}
+
+@media(min-width: 768px) {
+    body {
+        background: url('../img/desktop.svg') no-repeat top;
+        background-color: var(--black-1);
+    }
+}
